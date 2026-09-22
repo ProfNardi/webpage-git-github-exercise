@@ -1,66 +1,396 @@
 ```html
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+
+    <meta name="description" content="La nostra classe - un progetto collaborativo realizzato con Git e GitHub.">
+
     <link rel="stylesheet" href="style.css">
-    <!-- JavaScript -->
     <script src="script.js" defer></script>
-    
-    <title>La nostra ciola</title>
+
+    <title>La nostra classe</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>La nostra ciola</h1>
-        <p>Un progetto realizzato collaborativamente con Git e GitHub.</p>
-        <h1>Benvenuti!</h1>
+    <!-- Sfondo decorativo -->
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span>
+                La nostra classe
+            </a>
+
+            <nav>
+                <a href="#chi-siamo">Chi siamo</a>
+                <a href="#interessi">Interessi</a>
+                <a href="#classe">La classe</a>
+            </nav>
+
+            <button class="theme-button" id="themeButton" aria-label="Cambia tema">
+                ☀️
+            </button>
+
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <h2>Chi siamo</h2>
-            <p>
-                Questa pagina è stata realizzata dagli studenti della classe.
-            </p>
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="pulse"></span>
+                    Progetto collaborativo
+                </div>
+
+                <h1>
+                    Benvenuti nella
+                    <span>nostra classe!</span>
+                </h1>
+
+                <p>
+                    Un luogo dove condividere passioni, idee, creatività
+                    e tutto ciò che rende speciale la nostra classe.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#chi-siamo" class="button primary">
+                        Scopri di più
+                        <span>→</span>
+                    </a>
+
+                    <a href="#interessi" class="button secondary">
+                        I nostri interessi
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="card-glow"></div>
+
+                <div class="code-window">
+
+                    <div class="window-top">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span class="window-title">classe.html</span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="pink">&lt;classe&gt;</span></p>
+
+                        <p class="indent">
+                            <span class="blue">&lt;studenti&gt;</span>
+                            <span class="yellow">∞</span>
+                            <span class="blue">&lt;/studenti&gt;</span>
+                        </p>
+
+                        <p class="indent">
+                            <span class="blue">&lt;passioni&gt;</span>
+                            <span class="green">♥</span>
+                            <span class="blue">&lt;/passioni&gt;</span>
+                        </p>
+
+                        <p class="indent">
+                            <span class="blue">&lt;amicizia&gt;</span>
+                            <span class="purple">100%</span>
+                            <span class="blue">&lt;/amicizia&gt;</span>
+                        </p>
+
+                        <p><span class="pink">&lt;/classe&gt;</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section>
-            <h2>I nostri interessi</h2>
+        <!-- CHI SIAMO -->
+        <section class="section" id="chi-siamo">
 
-            <article>
-                <h3>Interesse 1</h3>
-                <p>Scrivi qui una lunga descrizione.</p>
-            </article>
+            <div class="section-heading">
+                <span class="section-number">01</span>
 
-            <article>
-                <h3>Interesse 2</h3>
-                <p>Scrivi qui una lunga descrizione.</p>
-            </article>
+                <div>
+                    <span class="eyebrow">Conosciamoci</span>
+                    <h2>Chi siamo?</h2>
+                </div>
+            </div>
 
-            <article>
-                <h3>Interesse 3</h3>
-                <p>Scrivi qui una lunga descrizione.</p>
-            </article>
+            <div class="about-grid">
+
+                <div class="about-text">
+                    <p class="large-text">
+                        Siamo una classe fatta di persone diverse,
+                        con passioni, idee e personalità uniche.
+                    </p>
+
+                    <p>
+                        Questa pagina nasce come progetto collaborativo
+                        per imparare a lavorare insieme utilizzando
+                        <strong>Git e GitHub</strong>.
+                    </p>
+
+                    <p>
+                        Ognuno può contribuire con nuove idee, contenuti
+                        e miglioramenti, trasformando questo sito in uno
+                        spazio creato da tutta la classe.
+                    </p>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <span class="stat-icon">👥</span>
+                        <strong>∞</strong>
+                        <span>Studenti</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">💡</span>
+                        <strong>∞</strong>
+                        <span>Idee</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">❤️</span>
+                        <strong>100%</strong>
+                        <span>Passione</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">🚀</span>
+                        <strong>1</strong>
+                        <span>Squadra</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <section>
-            <h2>La nostra classe</h2>
-            <p>
-                Qui possiamo aggiungere informazioni, immagini o contenuti
-                realizzati dagli studenti.
-            </p>
+        <!-- INTERESSI -->
+        <section class="section interests-section" id="interessi">
+
+            <div class="section-heading centered">
+
+                <span class="eyebrow">Le nostre passioni</span>
+
+                <h2>I nostri interessi</h2>
+
+                <p>
+                    Scopri alcune delle passioni che ci accompagnano
+                    dentro e fuori dalla scuola.
+                </p>
+
+            </div>
+
+            <div class="interest-grid">
+
+                <article class="interest-card card-blue">
+
+                    <div class="interest-icon">🎮</div>
+
+                    <div class="card-number">01</div>
+
+                    <h3>Gaming</h3>
+
+                    <p>
+                        Videogiochi, sfide online e avventure virtuali.
+                        Un modo per divertirsi, competere e passare
+                        del tempo insieme.
+                    </p>
+
+                    <a href="#classe">
+                        Scopri →
+                    </a>
+
+                </article>
+
+                <article class="interest-card card-purple">
+
+                    <div class="interest-icon">🎵</div>
+
+                    <div class="card-number">02</div>
+
+                    <h3>Musica</h3>
+
+                    <p>
+                        Canzoni, artisti e generi diversi. La musica
+                        è una delle cose che più riesce a rappresentare
+                        il nostro modo di essere.
+                    </p>
+
+                    <a href="#classe">
+                        Scopri →
+                    </a>
+
+                </article>
+
+                <article class="interest-card card-orange">
+
+                    <div class="interest-icon">⚽</div>
+
+                    <div class="card-number">03</div>
+
+                    <h3>Sport</h3>
+
+                    <p>
+                        Calcio, basket, palestra e molto altro.
+                        Lo sport ci insegna a impegnarci, collaborare
+                        e non arrenderci.
+                    </p>
+
+                    <a href="#classe">
+                        Scopri →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CLASSE -->
+        <section class="section class-section" id="classe">
+
+            <div class="class-container">
+
+                <div class="class-content">
+
+                    <span class="eyebrow">Il nostro gruppo</span>
+
+                    <h2>Una classe,<br><span>mille storie.</span></h2>
+
+                    <p>
+                        Ogni persona porta qualcosa di diverso.
+                        È proprio questa diversità che rende la nostra
+                        classe un gruppo speciale.
+                    </p>
+
+                    <div class="check-list">
+
+                        <div>
+                            <span>✓</span>
+                            <p>Collaboriamo per raggiungere gli obiettivi.</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Condividiamo idee e conoscenze.</p>
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            <p>Impariamo gli uni dagli altri.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="class-visual">
+
+                    <div class="visual-circle circle-big"></div>
+                    <div class="visual-circle circle-medium"></div>
+                    <div class="visual-circle circle-small"></div>
+
+                    <div class="emoji emoji-1">📚</div>
+                    <div class="emoji emoji-2">💻</div>
+                    <div class="emoji emoji-3">🎨</div>
+                    <div class="emoji emoji-4">🚀</div>
+
+                    <div class="visual-center">
+                        <span>✦</span>
+                        <strong>NOI</strong>
+                        <small>insieme</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- GIT -->
+        <section class="section git-section">
+
+            <div class="git-card">
+
+                <div class="git-icon">⌘</div>
+
+                <div>
+                    <span class="eyebrow">Tecnologia e collaborazione</span>
+
+                    <h2>Costruito insieme con Git & GitHub</h2>
+
+                    <p>
+                        Questo progetto ci permette di imparare a lavorare
+                        in squadra, gestire il codice e collaborare
+                        utilizzando strumenti reali dello sviluppo web.
+                    </p>
+                </div>
+
+                <div class="git-arrow">
+                    →
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>Progetto Git e GitHub - Classe</p>
+
+        <div class="footer-content">
+
+            <div>
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">✦</span>
+                    La nostra classe
+                </a>
+
+                <p>
+                    Un progetto creato insieme,
+                    una storia che continua.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#chi-siamo">Chi siamo</a>
+                <a href="#interessi">Interessi</a>
+                <a href="#classe">La classe</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Progetto della classe</span>
+            <span>Realizzato con ❤️, HTML, CSS & JavaScript</span>
+        </div>
+
     </footer>
 
 </body>
